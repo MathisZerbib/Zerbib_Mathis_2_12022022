@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,12 +19,22 @@
 <body>
     <div id="container">
         <header>
-            <img id="logo" src="../images/logo_long.png" alt="Logo Booki">
-            <nav>
-                <ul>
-                    <li class="border blue">Hebergement</li>
-                    <li class="border blue">Activités</li>
-                </ul>
+            <div class="logo">
+                <i class="fa-brands fa-digg fa-4x"></i>
+                <!-- <img id="logo" src="../images/logo_long.png" alt="Logo Booki"> -->
+            </div>
+            <nav class="menu">
+
+                <div class="menuBox">
+                     <hr size="2" width="70%" color="blue">  
+                <a class="border blue" href="#topContent">Hebergement</a>
+                </div>
+
+               <div class="menuBox">
+                <hr size="2" width="70%" color="blue">  
+                <a class="border blue" href='#botContent'>Activités</a>
+               </div>
+
             </nav>
         </header>
         <main>
@@ -40,10 +53,14 @@
                             <option value="Paris">
                             <option value="Chamonix">
                         </datalist>
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button type="submit">Rechercher</i></button>
                     </form>
                 </div>
 
+                <div id="spanInfo">
+                    <i class="fa-solid fa-circle-info icon"></i>
+                    <p class="info"> Plus de 500 Logements sont disponibles dans cette ville</p>
+                </div>
                 <div class="filterContainer">
                     <div id="filterTitle">
                         <h1>Filtres</h1>
@@ -73,12 +90,101 @@
                 </div>
 
             </div>
-            <div id="mainContent">
+            <div id="mainContainer">
+                <div id="topContent">
+                    <div class="hebergementsMarseille">
+                        <h1>Hébergement à Marseille</h1>
+                        <div class="cardContainer">
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody"></div>
+                                <div class="cardFooter"></div>
+                            </div>
+
+
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody"></div>
+                                <div class="cardFooter"></div>
+                            </div>
+
+
+
+
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody"> </div>
+                                <div class="cardFooter"></div>
+                            </div>
+
+
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody"></div>
+                                <div class="cardFooter"></div>
+                            </div>
+
+
+
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody"></div>
+                                <div class="cardFooter"></div>
+                            </div>
+
+
+                            
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody"></div>
+                                <div class="cardFooter"></div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="leftContent">
+                    <h1>Les plus populaires</h1>
+                    <div class="hebergements">
+                        <div class="cardContainer">
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-1.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody"></div>
+                                <div class="cardFooter"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="botContent">
+                <h1>Activités à Marseille</h1>
+                <i class="fa-solid fa-chart-line"></i>
                 <div class="hebergements">
                     <div class="cardContainer">
                         <div class="card">
                             <div class="cardHeader">
-                                <img id="miniature" src="../images/houses1.png" alt="House Miniature Image">
+                                <img id="miniature" src="../images/house-1.webp" alt="House Miniature Image">
                             </div>
                             <div class="cardBody"></div>
                             <div class="cardFooter"></div>
@@ -117,5 +223,4 @@
     </div>
 
 </body>
-
 </html>

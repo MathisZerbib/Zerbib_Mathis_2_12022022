@@ -1,8 +1,75 @@
-*, body {
-
+body {
     background-color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
+nav {
+  width: 25%;  
+  display: flex;
+  margin: 0 2%;
+
+}
+.menu a {
+  margin: 2%;
+  text-decoration: none;
+  padding: 2%;
+}
+hr {
+  margin-top: 0px;
+}
+
+.menuBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.menuBox:hover .menu a{
+  color: red; 
+}
+
+
+/* GENERAL LAYOUT 
+Les couleurs de la charte sont le bleu (#0065FC),
+bleu-clair (#DEEBFF) et le gris pour le fond (#F2F2F2)*/
+main {
+  margin: 2%;
+
+}
+
+#mainContainer {
+  display: flex;
+}
+
+#topContent {
+  flex: 0 0 66.666666%;
+
+}
+
+#botContent {
+  flex: 0 0 33.333333%;
+}
+
+#leftContent {
+background-color: #F2F2F2;
+border-radius: 1%;
+padding: 2%;
+margin: 2%;
+}
+
+button {
+  background-color: #0065FC;
+  color: white;
+}
+
+/* SUB - HEADER */
 .chip {
     display: inline-block;
     padding: 0 25px;
@@ -12,11 +79,68 @@
     border-radius: 25px;
     background-color: #f1f1f1;
   }
+  .chip i {
+    background-color: #DEEBFF;
+    border-radius: 50%;
+  }
   
-  .chip img {
+.chip img {
     float: left;
-    margin: 0 10px 0 -25px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
   }
+
+
+  /* Hebergements - Cards */
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card { 
+  flex: 0 0 33.333333%;
+}
+
+.hebergementsMarseille {
+  background-color: #F2F2F2;
+  border-radius: 1%;
+  padding: 2%;
+  margin: 2%;
+}
+
+#miniature {
+  height: 100px;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+
+}
+
+#spanInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.icon {
+  padding: 1%;
+}
+
+
+
+  /*TO DO FOOTER FLEX*/
+
+#footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
