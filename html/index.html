@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <title>Booki</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img id="logo" src="../images/logo_long.png" alt="Logo Booki">
+            <nav>
+                <ul>
+                    <li class="border blue">Hebergement</li>
+                    <li class="border blue">Activités</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="subHeader">
+                <div id="searchTitle">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <div id="searchContent">
+
+                    <form class="example" action="index.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="search" list="mylist">
+                        <datalist id="mylist">
+                            <option value="Marseille">
+                            <option value="Paris">
+                            <option value="Chamonix">
+                        </datalist>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="filterContainer">
+                    <div id="filterTitle">
+                        <h1>Filtres</h1>
+                    </div>
+                    <div class="filterContainer">
+                        <div class="chip">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            Economique
+                        </div>
+
+                        <div class="chip">
+                            <i class="fa-solid fa-person"></i>
+                            Familial
+                        </div>
+
+
+                        <div class="chip">
+                            <i class="fa-solid fa-heart"></i>
+                            Romantique
+                        </div>
+
+                        <div class="chip">
+                            <i class="fa-solid fa-dog"></i>
+                            Animaux autorisés
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="mainContent">
+                <div class="hebergements">
+                    <div class="cardContainer">
+                        <div class="card">
+                            <div class="cardHeader">
+                                <img id="miniature" src="../images/houses1.png" alt="House Miniature Image">
+                            </div>
+                            <div class="cardBody"></div>
+                            <div class="cardFooter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footerContent">
+                <div class="footerColumn border blue">
+                    <h3 class="border green">A propos</h3>
+                    <ul class="border green">
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+                </div>
+                <div class="footerColumn border blue">
+                    <h3 class="border green">Nos hébergements</h3>
+                    <ul class="border green">
+                        <li>Charte qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
+
+                </div>
+                <div class="footerColumn border blue">
+                    <h3 class="border green">Assistance</h3>
+                    <ul class="border green">
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
