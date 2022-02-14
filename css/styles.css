@@ -86,7 +86,7 @@ button {
 /* SUB - HEADER */
 
 .filterContainer {
-  display: flex;
+  display: inline-flex;
 }
 .chip {
     display: flex;
