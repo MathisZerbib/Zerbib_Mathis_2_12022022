@@ -8,6 +8,11 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.logo i {
+  justify-content: space-around;
+  display: flex;
+  width: 250px;
+}
 
 nav {
   width: 25%;  
@@ -40,6 +45,7 @@ hr {
 Les couleurs de la charte sont le bleu (#0065FC),
 bleu-clair (#DEEBFF) et le gris pour le fond (#F2F2F2)*/
 main {
+  padding: 2%;
   margin: 2%;
 
 }
@@ -71,7 +77,9 @@ button {
 
 /* SUB - HEADER */
 .chip {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 0;
     padding: 0 25px;
     height: 50px;
     font-size: 16px;
@@ -85,12 +93,22 @@ button {
   }
   
 .chip img {
-    float: left;
     height: 50px;
     width: 50px;
     border-radius: 50%;
   }
 
+
+  /* search form */
+.searchForm {
+    width: 20%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   /* Hebergements - Cards */
 
@@ -104,6 +122,10 @@ button {
 
 .card { 
   flex: 0 0 33.333333%;
+  background-color: white;
+  border-radius: 1%;
+  padding: 2%;
+  margin: 2%;
 }
 
 .hebergementsMarseille {
@@ -143,4 +165,5 @@ button {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+  background-color: #F2F2F2;
 }
