@@ -20,33 +20,34 @@
     <div id="container">
         <header>
             <div class="logo">
-                <i class="fa-brands fa-digg fa-4x"></i>
-                <!-- <img id="logo" src="../images/logo_long.png" alt="Logo Booki"> -->
+                <img id="logo" src="../images/logo/Booki@3x.png" alt="Logo Booki">
             </div>
             <nav class="menu">
 
                 <div class="menuBox activeLink">
-                     <!-- <hr size="2" width="70%" color="blue">   -->
-                <a class="border blue" href="#topContent">Hebergement</a>
+                    <!-- <hr size="2" width="70%" color="blue">   -->
+                    <a class="border blue" href="#topContent">Hebergement</a>
                 </div>
 
-               <div class="menuBox inactiveLink">
-                <!-- <hr size="2" width="70%" color="blue">   -->
-                <a class="border blue" href='#botContent'>Activités</a>
-               </div>
+                <div class="menuBox inactiveLink">
+                    <!-- <hr size="2" width="70%" color="blue">   -->
+                    <a class="border blue" href='#botContent'>Activités</a>
+                </div>
 
             </nav>
         </header>
         <main>
             <div id="subHeader">
                 <div id="searchTitle">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <div id="searchContent">
 
                     <form class="searchForm" action="index.html">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <div id="pinMap">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
                         <input class="inputSearchBox" type="search" list="mylist">
                         <datalist id="mylist">
                             <option value="Marseille, France">
@@ -58,32 +59,32 @@
                 </div>
 
 
-                    <div class="filterContainer">
-                            <h2>Filtres</h2>
-                        <div class="chip">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <p>Economique</p>
-                        </div>
-
-                        <div class="chip">
-                            <i class="fa-solid fa-person"></i>
-                            <p>Familial</p>
-                        </div>
-
-
-                        <div class="chip">
-                            <i class="fa-solid fa-heart"></i>
-                            <p>Romantique</p>
-                        </div>
-
-                        <div class="chip">
-                            <i class="fa-solid fa-dog"></i>
-                            <p>Animaux autorisés</p>
-                        </div>
+                <div class="filterContainer">
+                    <h2>Filtres</h2>
+                    <div class="chip">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <p>Economique</p>
                     </div>
+
+                    <div class="chip">
+                        <i class="fa-solid fa-person"></i>
+                        <p>Familial</p>
+                    </div>
+
+
+                    <div class="chip">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Romantique</p>
+                    </div>
+
+                    <div class="chip">
+                        <i class="fa-solid fa-dog"></i>
+                        <p>Animaux autorisés</p>
+                    </div>
+                </div>
                 <div id="spanInfo">
-                    <i class="fa-solid fa-circle-info icon"></i>
-                    <p class="info"> Plus de 500 Logements sont disponibles dans cette ville</p>
+                    <i class="fa-solid fa-info iconInfo"></i>
+                    <p class="info grey"> Plus de 500 Logements sont disponibles dans cette ville</p>
                 </div>
             </div>
             <div id="mainContainer">
@@ -94,87 +95,117 @@
 
                             <div class="card">
                                 <div class="cardHeader">
-                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                    <img id="miniature"
+                                        src="../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                        alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <p class="bold">Auberge de la canebière</p>
+                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
                                 </div>
-                                <div class="cardFooter"></div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                                </div>
                             </div>
 
 
 
                             <div class="card">
                                 <div class="cardHeader">
-                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
-                                </div>
-                              <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="cardFooter"></div>
-                            </div>
-
-
-
-
-
-                            <div class="card">
-                                <div class="cardHeader">
-                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                    <img id="miniature"
+                                        src="../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                        alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <p class="bold">Auberge de la canebière</p>
+                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
                                 </div>
-                                <div class="cardFooter"></div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                                </div>
                             </div>
 
-
-
-                            <div class="card">
-                                <div class="cardHeader">
-                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
-                                </div>
-                              <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="cardFooter"></div>
-                            </div>
 
 
 
 
                             <div class="card">
                                 <div class="cardHeader">
-                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                    <img id="miniature"
+                                        src="../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                        alt="House Miniature Image">
                                 </div>
-                              <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <div class="cardBody">
+                                    <p class="bold">Auberge de la canebière</p>
+                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
                                 </div>
-                                <div class="cardFooter"></div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                                </div>
                             </div>
 
 
-                            
+
                             <div class="card">
                                 <div class="cardHeader">
-                                    <img id="miniature" src="../images/house-5.webp" alt="House Miniature Image">
+                                    <img id="miniature"
+                                        src="../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                        alt="House Miniature Image">
                                 </div>
-                              <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <div class="cardBody">
+                                    <p class="bold">Auberge de la canebière</p>
+                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
                                 </div>
-                                <div class="cardFooter"></div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature"
+                                        src="../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                        alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody">
+                                    <p class="bold">Auberge de la canebière</p>
+                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                </div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature"
+                                        src="../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                        alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody">
+                                    <p class="bold">Auberge de la canebière</p>
+                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                </div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                                </div>
                             </div>
 
 
@@ -190,12 +221,15 @@
                                 <div class="cardHeader">
                                     <img id="miniature" src="../images/house-1.webp" alt="House Miniature Image">
                                 </div>
-                              <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <div class="cardBody">
+                                    <p class="bold">Auberge de la canebière</p>
+                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
                                 </div>
-                                <div class="cardFooter"></div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -208,14 +242,19 @@
                     <div class="cardContainer">
                         <div class="card">
                             <div class="cardHeader">
-                                <img id="miniature" src="../images/house-1.webp" alt="House Miniature Image">
+                                <img id="miniature"
+                                    src="../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                    alt="House Miniature Image">
                             </div>
-                          <div class="cardBody">
-                                    <p>Auberge de la canebière</p>
-                                    <p>Nuit à partir de <span>25€</span> </p>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                            <div class="cardFooter"></div>
+                            <div class="cardBody">
+                                <p class="bold">Vieux Port</p>
+                                <p class="grey info">Nuit à partir de <span>25€</span></p>
+                            </div>
+                            <div class="cardFooter">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,4 +290,5 @@
     </div>
 
 </body>
+
 </html>

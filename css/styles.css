@@ -1,17 +1,65 @@
+/* GENERAL LAYOUT 
+Les couleurs de la charte sont le bleu (#0065FC),
+bleu-clair (#DEEBFF) et le gris pour le fond (#F2F2F2)*/
+
 body {
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
-    margin: 0px;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+  letter-spacing: -0.5px;
 }
+
+main {
+  padding: 0 2%;
+  margin: 0 4%;
+
+}
+
+#mainContainer {
+  display: flex;
+}
+
+#topContent {
+  flex: 0 0 66.666666%;
+
+}
+
+#botContent {
+  flex: 0 0 33.333333%;
+}
+
+#leftContent {
+background-color: #F2F2F2;
+border-radius: 1%;
+padding: 2%;
+margin: 2%;
+}
+
+button {
+  background-color: #0065FC;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.grey {
+  color:grey;
+}
+
+
 /* HEADER */
 header {
   display: flex;
   justify-content: space-between;
 }
-.logo i {
+.logo #logo {
   justify-content: space-around;
   display: flex;
-  width: 250px;
+  height: 50px;
+  padding: 20px 70px;
+  margin: 0 30px;
 }
 
 nav {
@@ -49,68 +97,72 @@ hr {
   color: black;
 }
 
-/* GENERAL LAYOUT 
-Les couleurs de la charte sont le bleu (#0065FC),
-bleu-clair (#DEEBFF) et le gris pour le fond (#F2F2F2)*/
-main {
-  padding: 2%;
-  margin: 2%;
-
-}
-
-#mainContainer {
+/* search form */
+.searchForm {
+  width: fit-content;
+  border: solid 1px #F2F2F2;
+  border-radius: 15px;
   display: flex;
-}
+  height: 35px;
+  align-items: center;
+  justify-content: space-between;
+  }
 
-#topContent {
-  flex: 0 0 66.666666%;
+  #pinMap {
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: 15%;
+    text-align: center;
+  }
 
-}
+  .inputSearchBox {
+    height: 40px;
+    width: 50%;
+    font-weight: bold;
+    border: none;
+  }
 
-#botContent {
-  flex: 0 0 33.333333%;
-}
-
-#leftContent {
-background-color: #F2F2F2;
-border-radius: 1%;
-padding: 2%;
-margin: 2%;
-}
-
-button {
-  background-color: #0065FC;
-  color: white;
-}
-
-/* SUB - HEADER */
+  .searchButton {
+    height: inherit;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    border: none;
+  }
+/* SUBHEADER - Filters */
 
 .filterContainer {
-  display: inline-flex;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 .chip {
-    display: flex;
-    align-items: center;
-    flex-grow: 0;
-    height: 40px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 50px;
-    border-radius: 25px;
-    background-color: white;
-    border: 3px solid #F2F2F2;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: white;
+  border: 3px solid #F2F2F2;
+  margin: 10px;
   }
   .chip i {
     background-color: #DEEBFF;
     display: flex;
     border-radius: 50%;
     width: 40px;
-    height: 100%;
+    height: 41px;
     align-items: center;
     justify-content: center;
     margin-right: 15px;
     color: #0065FC;
+    margin-left: -1px;
   }
   
   .chip p {
@@ -123,31 +175,29 @@ button {
   }
 
 
-  /* search form */
-.searchForm {
-    width: fit-content;
-    background-color: #F2F2F2;
-    border-radius: 15px;
+  /* SUBHEADER - Text  */
+
+  .iconInfo {
+    height: 20px;
+    width: 20px;
     display: flex;
-    height: 45px;
+    text-align: center;
+    justify-content: center;
     align-items: center;
+    border-radius: 25px;
+    background-color: white;
+    border: 3px solid #F2F2F2;
+    margin: 10px;
+    color: #0065FC;
   }
 
-  .searchForm i {
-    margin: 0 15px;
-  }
 
-  .inputSearchBox {
-    height: 40px;
-    width: 50%;
-    font-weight: bold;
-  }
-
-  .searchButton {
-    padding: 10px;
-    border-radius: 15px;
-    font-weight: bold;
-  }
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+  
 
   /* Hebergements - Cards */
 
@@ -162,9 +212,11 @@ button {
 .card { 
   flex: 0 0 33.333333%;
   background-color: white;
-  border-radius: 1%;
-  padding: 2%;
+  border-radius: 25px;
+  border: solid 1px white;
+  padding: 1%;
   margin: 2%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .hebergementsMarseille {
@@ -175,12 +227,11 @@ button {
 }
 
 #miniature {
+  width: 100%;
   height: 100px;
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 #spanInfo {
@@ -188,6 +239,9 @@ button {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+}
+.info {
+  font-size: smaller;
 }
 
 .icon {
