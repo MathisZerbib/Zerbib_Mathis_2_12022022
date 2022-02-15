@@ -39,7 +39,7 @@ main {
   /* flex: 0 0 33.333333%; */
 }
 
-#leftContent {
+#rightContent {
 background-color: #F2F2F2;
 padding: 2%;
 margin: 1%;
@@ -87,7 +87,7 @@ header {
   justify-content: space-around;
   display: flex;
   height: 50px;
-  padding: 20px 70px;
+  padding: 20px 20%;
   margin: 0 30px;
 }
 
@@ -284,6 +284,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: -webkit-fill-available;
   padding: 5px;
   margin: 5%;
+  align-items: center;
 }
 
   /* Hebergements - Cards */
@@ -364,7 +365,29 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding: 1%;
 }
 
+/* ACTIVITES */
 
+
+.cardLeft {
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: space-around;
+}
+.innerCardLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardRight {
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: space-around;
+
+}
+.innerCardRight {
+  display: flex;
+  flex-direction: column;
+}
 
   /*TO DO FOOTER FLEX*/
 
