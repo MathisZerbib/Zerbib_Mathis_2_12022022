@@ -38,59 +38,64 @@
         </header>
         <main>
             <div id="subHeader">
-                <div id="searchTitle">
-                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </div>
-                <div id="searchContent">
-
-                    <form class="searchForm" action="index.html">
-                        <div id="pinMap">
-                            <i class="fa-solid fa-location-dot"></i>
+                <div class="leftSubHeader">
+                    <div id="searchTitle">
+                        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+                    <div id="searchContent">
+    
+                        <form class="searchForm" action="index.html">
+                            <div id="pinMap">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <input class="inputSearchBox" type="search" list="mylist">
+                            <datalist id="mylist">
+                                <option value="Marseille, France">
+                                <option value="Paris, France">
+                                <option value="Chamonix, France">
+                            </datalist>
+                            <button class="searchButton" type="submit">Rechercher</i></button>
+                        </form>
+                    </div>
+    
+    
+                    <div class="filterContainer">
+                        <h3>Filtres</h3>
+                        <div class="chip">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <p>Economique</p>
                         </div>
-                        <input class="inputSearchBox" type="search" list="mylist">
-                        <datalist id="mylist">
-                            <option value="Marseille, France">
-                            <option value="Paris, France">
-                            <option value="Chamonix, France">
-                        </datalist>
-                        <button class="searchButton" type="submit">Rechercher</i></button>
-                    </form>
+    
+                        <div class="chip">
+                            <i class="fa-solid fa-person"></i>
+                            <p>Familial</p>
+                        </div>
+    
+    
+                        <div class="chip">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+    
+                        <div class="chip">
+                            <i class="fa-solid fa-dog"></i>
+                            <p>Animaux autorisés</p>
+                        </div>
+                    </div>
+                    <div id="spanInfo">
+                        <i class="fa-solid fa-info iconInfo"></i>
+                        <p class="info grey"> Plus de 500 Logements sont disponibles dans cette ville</p>
+                    </div>
+    
                 </div>
-
-
-                <div class="filterContainer">
-                    <h2>Filtres</h2>
-                    <div class="chip">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <p>Economique</p>
-                    </div>
-
-                    <div class="chip">
-                        <i class="fa-solid fa-person"></i>
-                        <p>Familial</p>
-                    </div>
-
-
-                    <div class="chip">
-                        <i class="fa-solid fa-heart"></i>
-                        <p>Romantique</p>
-                    </div>
-
-                    <div class="chip">
-                        <i class="fa-solid fa-dog"></i>
-                        <p>Animaux autorisés</p>
-                    </div>
-                </div>
-                <div id="spanInfo">
-                    <i class="fa-solid fa-info iconInfo"></i>
-                    <p class="info grey"> Plus de 500 Logements sont disponibles dans cette ville</p>
-                </div>
+                <div class="rightSubHeader"></div>
+                
             </div>
             <div id="mainContainer">
                 <div id="topContent">
                     <div class="hebergementsMarseille">
-                        <h1>Hébergement à Marseille</h1>
+                        <h1 class="title">Hébergement à Marseille</h1>
                         <div class="cardContainer">
 
                             <div class="card">
@@ -100,12 +105,15 @@
                                         alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p class="bold">Auberge de la canebière</p>
-                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                    <p class="bold titleHouse">Auberge La Canebière</p>
+                                    <p class="grey info price">Nuit à partir de <span>25€</span></p>
                                 </div>
                                 <div class="cardFooter">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs unstar"></i>
 
                                 </div>
                             </div>
@@ -119,12 +127,15 @@
                                         alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p class="bold">Auberge de la canebière</p>
-                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                    <p class="bold titleHouse">Hôtel du port</p>
+                                    <p class="grey info price">Nuit à partir de <span>52€</span></p>
                                 </div>
                                 <div class="cardFooter">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
 
                                 </div>
                             </div>
@@ -140,12 +151,15 @@
                                         alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p class="bold">Auberge de la canebière</p>
-                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                    <p class="bold titleHouse">Hôtel Les mouettes</p>
+                                    <p class="grey info price">Nuit à partir de <span>76€</span></p>
                                 </div>
                                 <div class="cardFooter">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs unstar"></i>
 
                                 </div>
                             </div>
@@ -159,12 +173,15 @@
                                         alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p class="bold">Auberge de la canebière</p>
-                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                    <p class="bold titleHouse">Hôtel de la mer</p>
+                                    <p class="grey info price">Nuit à partir de <span>46€</span></p>
                                 </div>
                                 <div class="cardFooter">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs unstar"></i>
+                                    <i class="fa-solid fa-star fa-xs unstar"></i>
 
                                 </div>
                             </div>
@@ -179,12 +196,15 @@
                                         alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p class="bold">Auberge de la canebière</p>
-                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                    <p class="bold titleHouse">Auberge Le Panier</p>
+                                    <p class="grey info price">Nuit à partir de <span>23€</span></p>
                                 </div>
                                 <div class="cardFooter">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs unstar"></i>
 
                                 </div>
                             </div>
@@ -198,36 +218,82 @@
                                         alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p class="bold">Auberge de la canebière</p>
-                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                    <p class="bold titleHouse">Hôtel chez Amina</p>
+                                    <p class="grey info price">Nuit à partir de <span>96€</span></p>
                                 </div>
                                 <div class="cardFooter">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
 
                                 </div>
                             </div>
 
-
-
                         </div>
+                        <p class="title bold small"> Afficher Plus</p>
+
                     </div>
                 </div>
+
+
+
                 <div id="leftContent">
-                    <h1>Les plus populaires</h1>
+                    <h1 class="title">Les plus populaires<i class="fa-solid fa-chart-line"></i></h1>
+                    
                     <div class="hebergements">
-                        <div class="cardContainer">
+                        <div class="mfCardContainer">
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody">
+                                    <p class="bold titleHouse">Hôtel Le soleil du matin</p>
+                                    <p class="grey info price">Nuit à partir de <span>128€</span></p>
+                                </div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+
+                                </div>
+                            </div>
+
                             <div class="card">
                                 <div class="cardHeader">
                                     <img id="miniature" src="../images/house-1.webp" alt="House Miniature Image">
                                 </div>
                                 <div class="cardBody">
-                                    <p class="bold">Auberge de la canebière</p>
-                                    <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                    <p class="bold titleHouse">Au coeur de l'eau<br/> Chambres d'hôtes</p>
+                                    <p class="grey info price">Nuit à partir de <span>71€</span></p>
                                 </div>
                                 <div class="cardFooter">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs unstar"></i>
+
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="cardHeader">
+                                    <img id="miniature" src="../images/house-1.webp" alt="House Miniature Image">
+                                </div>
+                                <div class="cardBody">
+                                    <p class="bold titleHouse">Hôtek Tout bleu et Blanc</p>
+                                    <p class="grey info price">Nuit à partir de <span>68€</span></p>
+                                </div>
+                                <div class="cardFooter">
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs"></i>
+                                    <i class="fa-solid fa-star fa-xs unstar"></i>
 
                                 </div>
                             </div>
@@ -235,9 +301,10 @@
                     </div>
                 </div>
             </div>
+
+
             <div id="botContent">
                 <h1>Activités à Marseille</h1>
-                <i class="fa-solid fa-chart-line"></i>
                 <div class="hebergements">
                     <div class="cardContainer">
                         <div class="card">
@@ -248,11 +315,11 @@
                             </div>
                             <div class="cardBody">
                                 <p class="bold">Vieux Port</p>
-                                <p class="grey info">Nuit à partir de <span>25€</span></p>
+                                <p class="grey info price">Nuit à partir de <span>25€</span></p>
                             </div>
                             <div class="cardFooter">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i
+                                    class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i>
 
                             </div>
                         </div>
