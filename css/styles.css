@@ -163,7 +163,7 @@ hr {
   /* specifically hide the arrow on focus */
   input[type="search"] {
     outline: none;
-    margin-left: 10px;
+    height: inherit;
   }
 
   #pinMap:not(:hover) {
@@ -473,7 +473,6 @@ margin: 0 2% 0 0;
 /* Tablets that are 992px or less */
 @media screen and (max-width: 992px) {
   body {
-    background-color: blue;
     display: flex;
     flex-direction: column;  
     flex-flow: row wrap;
@@ -491,7 +490,6 @@ margin: 0 2% 0 0;
     width: 100vw;
   }
   body {
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;  
     flex-flow: row wrap;
@@ -514,7 +512,7 @@ margin: 0 2% 0 0;
 nav {
   width: 70%;
     display: flex;
-    margin: 2% 2%;
+    margin: 2% 0 5% 0;
 }
 
 .filterContainer {
@@ -530,7 +528,70 @@ nav {
   margin-right: auto;
   
 }
+/*Main container */ 
+#mainContainer {
+  flex-direction: column-reverse;
+}
 
+#rightContent {
+  padding: 5%;
+}
+
+.cardContainer {
+  flex-direction: column;
+}
+
+.hebergementsMarseille {
+  background-color: white;
+}
+
+.cardLeft {
+  flex-direction: column;
+  flex: 0 0 100%;
+}
+
+.cardRight {
+  flex-direction: column;
+  flex: 0 0 100%;
+}
+.innerCardLeft {
+  width: auto;
+  height: auto;
+}
+
+.innerCardRight {
+  width: auto;
+  height: auto;
+}
+
+.bigMiniature {
+  height: 200px;
+}
+
+.mediumMiniature {
+  height: 200px;
+}
+
+.smallMiniature {
+  height: 200px;
+}
+
+.miniature {
+  width: 300px;
+  height: 200px;
+}
+
+
+
+/* FOOTER LINKS*/
+#footerContent {
+  height: auto;
+}
+
+.footerColumn {
+  margin-top: 20px;
+  width: 200px;
+}
 
 }
 
