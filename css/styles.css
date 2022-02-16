@@ -272,15 +272,7 @@ margin: 0 2% 0 0;
     color: #0065FC;
   }
 
-
-
-/* clears the 'X' from Chrome */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
-  
-/* Most Famous */
+/* Most Famous Section */
 
 .mfCardContainer {
   display: flex;
@@ -381,35 +373,59 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .cardLeft {
   display: flex;
   flex: 0 0 50%;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 420px;
 }
 .innerCardLeft {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: auto;
+  height: fit-content;
 }
 
 .cardRight {
   display: flex;
   flex: 0 0 50%;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 420px;
 
 }
 .innerCardRight {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  height: fit-content;
 }
 
 
 .bigMiniature {
-  height: 300px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-  /*TO DO FOOTER FLEX*/
+
+.mediumMiniature {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.smallMiniature {
+  width: 100%;
+  height: 105px;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.cardTitleFooter {
+  margin-bottom: 15px;
+}
+  /*FOOTER Links*/
 
 #footerContent {
   font-size: small;
@@ -428,6 +444,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   list-style-type: none;
   text-align: left;
   padding-inline-start:0px
+}
+
+
+#footerContent li {
+  cursor: pointer;
+}
+
+#footerContent li:hover {
+  color: #0065FC;
 }
 
 /* MEDIA QUERIES */
