@@ -232,7 +232,19 @@ margin: 0 2% 0 0;
   border: 3px solid #F2F2F2;
   margin: 10px;
   border-left-style: none;
+  cursor: pointer;
   }
+
+  .chip:hover {
+    color: white;
+    background-color: #0065FC;
+    transition: all 0.2s ease;
+    }
+
+  .chip:not(:hover) {
+      transition: all 0.2s ease;
+     } 
+
   .chip i {
     background-color: #DEEBFF;
     display: flex;
