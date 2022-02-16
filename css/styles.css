@@ -35,7 +35,7 @@ main {
 }
 
 #botContent {
-  /* flex: 0 0 33.333333%; */
+  margin-bottom: 50px;
 }
 
 #rightContent {
@@ -225,7 +225,7 @@ margin: 0 2% 0 0;
   display: flex;
   align-items: center;
   flex-grow: 0;
-  height: 35px;
+  height: 45px;
   font-weight: bold;
   border-radius: 25px;
   background-color: white;
@@ -237,8 +237,8 @@ margin: 0 2% 0 0;
     background-color: #DEEBFF;
     display: flex;
     border-radius: 50%;
-    width: 40px;
-    height: 41px;
+    width: 50px;
+    height: 50px;
     align-items: center;
     justify-content: center;
     margin-right: 15px;
@@ -248,6 +248,8 @@ margin: 0 2% 0 0;
   
   .chip p {
     margin-right: 15px;
+    overflow: hidden;
+    white-space: nowrap;
   }
 .chip img {
     height: 50px;
@@ -335,7 +337,7 @@ margin: 0 2% 0 0;
   margin-bottom: 0;
 }
 
-#miniature {
+.miniature {
   width: 100%;
   height: 100px;
   object-fit: cover;
@@ -374,32 +376,32 @@ margin: 0 2% 0 0;
   display: flex;
   flex: 0 0 50%;
   justify-content: space-evenly;
-  height: 420px;
+  height: 400px;
 }
 .innerCardLeft {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: fit-content;
+  height: auto;
 }
 
 .cardRight {
   display: flex;
   flex: 0 0 50%;
   justify-content: space-evenly;
-  height: 420px;
+  height: 400px;
 
 }
 .innerCardRight {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: fit-content;
+  height: auto;
 }
 
 
 .bigMiniature {
-  height: 350px;
+  height: 380px;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 25px;
@@ -424,6 +426,15 @@ margin: 0 2% 0 0;
 
 .cardTitleFooter {
   margin-bottom: 15px;
+}
+
+.cardBorderless {
+  border: none;
+  flex: 1 1 25%;
+  background-color: white;
+  border-radius: 25px;
+  margin: 6%;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 6%), 0 6px 6px rgb(0 0 0 / 6%);
 }
   /*FOOTER Links*/
 
@@ -456,24 +467,3 @@ margin: 0 2% 0 0;
 }
 
 /* MEDIA QUERIES */
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-
-}
-
-
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-
-
-}
