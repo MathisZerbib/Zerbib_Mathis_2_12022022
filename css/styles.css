@@ -68,11 +68,7 @@ button {
 }
 
 .bold {
-  font-weight: 600;
-}
-
-.grey {
-  color:grey;
+  font-weight: bold;
 }
 
 .unstar {
