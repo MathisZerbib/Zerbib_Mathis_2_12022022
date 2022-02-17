@@ -1,4 +1,4 @@
-/* GENERAL LAYOUT 
+/* GENERAL LAYOUT
 Les couleurs de la charte sont le bleu (#0065FC),
 bleu-clair (#DEEBFF) et le gris pour le fond (#F2F2F2)*/
 
@@ -10,7 +10,7 @@ body {
 
 main {
   padding: 0 2%;
-  margin: 0 2%;
+  margin: 0 5%;
   display: flex;
   flex-direction: column;
 
@@ -24,6 +24,11 @@ main {
 .column {
   flex-direction: column;
 }
+
+.noMargin {
+  margin: 0;
+}
+
 #mainContainer {
   display: flex;
   justify-content: center;
@@ -91,7 +96,7 @@ header {
 }
 
 nav {
-  width: 25%;  
+  width: 25%;
   display: flex;
   margin: 0 2%;
 
@@ -114,7 +119,7 @@ hr {
 }
 
 .menuBox:hover a{
-  color: #0065FC; 
+  color: #0065FC;
 }
 
 .activeLink {
@@ -131,7 +136,7 @@ hr {
   margin: 2% 0;
 }
 .searchForm {
-  width: 300px;
+  width: 380px;
   border: solid 1px #F2F2F2;
   border-radius: 15px;
   display: flex;
@@ -168,7 +173,7 @@ hr {
 
   #pinMap:not(:hover) {
     transition: all 0.2s ease;
-   } 
+   }
 
   .inputSearchBox {
     width: 50%;
@@ -196,7 +201,7 @@ hr {
 
   .searchButton:not(:hover) {
     transition: all 0.2s ease;
-   } 
+   }
 
 
 /* SUBHEADER - Filters */
@@ -214,7 +219,7 @@ hr {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 2% 0; 
+  margin: 2% 0;
 }
 
 .filterTitle {
@@ -243,7 +248,7 @@ margin: 0 2% 0 0;
 
   .chip:not(:hover) {
       transition: all 0.2s ease;
-     } 
+     }
 
   .chip i {
     background-color: #DEEBFF;
@@ -257,7 +262,7 @@ margin: 0 2% 0 0;
     color: #0065FC;
     margin-left: -1px;
   }
-  
+
   .chip p {
     margin-right: 15px;
     overflow: hidden;
@@ -297,7 +302,7 @@ margin: 0 2% 0 0;
 }
 
 .mfCardContainer .card {
-  width: -webkit-fill-available;
+  width: 60%;
   padding: 5px;
   margin: 5%;
   align-items: center;
@@ -313,8 +318,10 @@ margin: 0 2% 0 0;
   flex-direction: row;
 }
 
-
-.card { 
+.cardHeader {
+  display: flex;
+}
+.card {
   flex: 1 1 25%;
   background-color: white;
   border-radius: 25px;
@@ -346,7 +353,6 @@ margin: 0 2% 0 0;
 }
 
 .titleHouse {
-  margin-bottom: 0;
 }
 
 .miniature {
@@ -359,13 +365,19 @@ margin: 0 2% 0 0;
 
 
 .mostFamousPictures {
-  width: 100%;
-  height: 100px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
 
+.mostFamousText {
+  height: 150px;
+  width: 250px;
+  /* margin-left: auto; */
+  justify-content: space-around;
+}
 
 #spanInfo {
   display: flex;
@@ -472,6 +484,7 @@ margin: 0 2% 0 0;
 
 #footerContent li {
   cursor: pointer;
+  line-height: 30px;
 }
 
 #footerContent li:hover {
@@ -483,27 +496,28 @@ margin: 0 2% 0 0;
 
 
 /* Tablets that are 992px or less */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   body {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     flex-flow: row wrap;
   }
 
-
+  .filterContainer>.filterTitle {
+    flex: 1 0 100%;
 }
 
-/* Mobile Screens that are 600px or less */
-@media screen and (max-width: 768px) {
-
-
+.filterContainer {
+    flex-flow: wrap;
+    justify-content: flex-start;
+}
   /* General Layout*/
   #container {
     width: 100vw;
   }
   body {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     flex-flow: row wrap;
   }
 
@@ -527,20 +541,115 @@ nav {
     margin: 2% 0 5% 0;
 }
 
-.filterContainer {
+/*Main container */
+#mainContainer {
+  flex-direction: column-reverse;
+}
+
+#rightContent {
+  padding: 5%;
+}
+
+.cardContainer {
+  flex-direction: column;
+}
+
+.innerCardRight {
+  width: auto;
+  height: auto;
+}
+
+.miniature {
+  width: 500px;
+  height: 300px;
+}
+
+.bigMiniature {
+  height: 500px;
+}
+
+.mediumMiniature {
+  height: 200px;
+}
+
+.smallMiniature {
+  height: 200px;
+}
+
+
+/* FOOTER LINKS*/
+#footerContent {
+  height: auto;
+}
+
+.footerColumn {
+  margin-top: 20px;
+  width: 200px;
+}
+
+
+
+}
+
+
+/* MOBILE SCREEN that are 600px or less */
+@media screen and (max-width: 768px) {
+
+
+  /* General Layout*/
+  #container {
+    width: 100vw;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+  }
+
+  /* Header layout */
+  header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+
+  .logo #logo {
+    justify-content: space-around;
+    display: flex;
+    height: 50px;
+    padding: 20px 0;
+    margin: 0 30px;
+}
+nav {
+  width: 70%;
+    display: flex;
+    margin: 2% 0 5% 0;
+}
+
+/* .filterContainer {
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 .filterContainer>.filterTitle {
   flex: 1 0 50%;
+} */
+
+.filterContainer>.filterTitle {
+  flex: 1 0 100%;
 }
+
+.filterContainer {
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+
 .filterContainer>.chip {
   order: 1;
   flex: 0.5;
   margin-right: auto;
-  
+
 }
-/*Main container */ 
+/*Main container */
 #mainContainer {
   flex-direction: column-reverse;
 }
@@ -608,3 +717,14 @@ nav {
 }
 
 
+
+/* 
+
+Alignement Button Rechercher 
+Section Most Famous
+
+Responsive footer Tablet
+
+
+
+*/
