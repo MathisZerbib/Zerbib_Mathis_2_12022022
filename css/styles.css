@@ -864,6 +864,13 @@ hr {
 	justify-content: space-between
 }
 
+
+.searchForm .fa-search {
+	display: none;
+	background-color: #0065fc;
+}
+
+
 #pinMap {
 	background-color: #f2f2f2;
 	border-bottom-left-radius: 15px;
@@ -1190,7 +1197,14 @@ mostfamousTitle {
 	color: #0065fc
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
+
+	.searchForm .fa-search {
+		display: flex;
+	}
+	.searchButton p {
+		display: none;
+	}
 	.activeLink {
 		border-top: solid 2px white;
 		color: #0065fc
