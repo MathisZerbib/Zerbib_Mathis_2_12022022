@@ -16,7 +16,7 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
-	margin: 50px;
+	margin: 30px;
 }
 
 .flex {
@@ -66,6 +66,16 @@ button {
 	font-size: larger
 }
 
+.innerCardLeft a, .innerCardRight a, .hebergementsMarseille a, .mfCardContainer a {
+	all: unset;
+	cursor: pointer;
+
+}
+
+.hebergementsMarseille a {
+	flex: 0 0 33.33333%;
+}
+
 .bigCardTitle {
 	padding: 0 40px;
     padding-top: 15px;
@@ -111,7 +121,7 @@ nav {
 .menu a {
 	margin: 5px;
 	text-decoration: none;
-	padding: 5px
+	padding: 30px 0;
 }
 
 hr {
@@ -304,9 +314,9 @@ input[type=search] {
 }
 
 .mfCardContainer .card {
-	width: 70%;
-	padding: 5px;
-    margin: 25px;
+	width: 90%;
+	padding: 3px;
+    margin: 15px;
 	align-items: center
 }
 
@@ -328,7 +338,7 @@ input[type=search] {
 	border-radius: 25px;
 	border: solid 1px #fff;
 	padding: 3px;
-	margin: 30px;
+	margin: 15px;
 	box-shadow: 0 5px 15px rgb(0 0 0 / 6%), 0 6px 6px rgb(0 0 0 / 6%)
 }
 
@@ -350,12 +360,13 @@ input[type=search] {
 }
 
 .hebergementsMarseille .title, .mostfamousTitle {
-	padding: 0 40px;
+	padding: 0 30px;
 	padding-top: 15px
 }
 
 .titleHouse {
-	margin-bottom: 0
+	margin-bottom: 0;
+	width: 250px;
 }
 
 .miniature {
@@ -448,7 +459,8 @@ input[type=search] {
 }
 
 .cardTitleFooter {
-	margin-bottom: 15px
+	margin-bottom: 15px;
+	margin-left: 5px;
 }
 
 .cardBorderless {
@@ -456,7 +468,8 @@ input[type=search] {
 	flex: 1 1 25%;
 	background-color: #fff;
 	border-radius: 25px;
-	margin: 6%;
+	margin: 20px;
+	padding-bottom: 5px;
 	box-shadow: 0 5px 15px rgb(0 0 0 / 6%), 0 6px 6px rgb(0 0 0 / 6%)
 }
 
@@ -508,7 +521,7 @@ input[type=search] {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width:992px) {
+@media screen and (min-width: 120px) and (max-width:992px) {
 		
 	.searchForm .fa-search {
 		display: flex;
