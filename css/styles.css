@@ -42,7 +42,7 @@ main {
 }
 
 #botContent {
-	margin-bottom: 50px
+	padding: 50px 0;
 }
 
 #rightContent {
@@ -282,8 +282,8 @@ input[type=search] {
 }
 
 .iconInfo {
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -623,9 +623,6 @@ body {
 }
 
 @media screen and (max-width:768px) {
-	#container {
-		width: 100vw
-	}
 	body {
 		display: flex;
 		flex-direction: column;
@@ -701,7 +698,11 @@ body {
 		height: 200px
 	}
 	#footerContent {
-		height: auto
+		height: auto;
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 50px;
+	
 	}
 	.footerColumn {
 		margin-top: 20px;
