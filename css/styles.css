@@ -4,20 +4,25 @@
 	box-sizing: inherit;
 }
 
+
+
 html {
 	box-sizing: border-box;
+	font-size: 100%;
 }
+@media (min-width: 120px) and (max-width: 992px) { body {font-size:90%} }
+@media (min-width:992px) { body {font-size:100%;} }
+@media (min-width:1100px) { body {font-size:110%;} }
 body {
 	background-color: #fff;
 	font-family: Raleway, sans-serif;
 	margin: 0
 }
-
 main {
-	display: flex;
-	flex-direction: column;
-	margin: 30px;
-}
+    display: flex;
+    flex-wrap: wrap;
+	margin: 0 20px;
+  }
 
 .flex {
 	display: flex
@@ -25,6 +30,12 @@ main {
 
 .column {
 	flex-direction: column
+}
+
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 .noMargin {
@@ -207,7 +218,10 @@ input[type=search] {
 	font-weight: 700;
 	border: none;
 	cursor: pointer;
-	padding: 0 5%
+	padding: 0 5%;
+}
+.searchButton p {
+	margin: 0;
 }
 .searchButton:hover p {
 	color: #0065fc;
@@ -285,11 +299,7 @@ input[type=search] {
 	white-space: nowrap
 }
 
-.chip img {
-	height: 50px;
-	width: 50px;
-	border-radius: 50%
-}
+
 
 .iconInfo {
 	height: 25px;
@@ -328,9 +338,6 @@ input[type=search] {
 	flex-direction: row
 }
 
-.cardHeader {
-	display: flex
-}
 
 .card {
 	flex: 1 1 25%;
