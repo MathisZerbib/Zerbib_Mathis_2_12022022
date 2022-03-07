@@ -10,9 +10,9 @@ html {
 	box-sizing: border-box;
 	font-size: 100%;
 }
-@media (min-width: 120px) and (max-width: 992px) { body {font-size:90%} }
-@media (min-width:992px) { body {font-size:100%;} }
-@media (min-width:1100px) { body {font-size:110%;} }
+body {
+	font-size: calc(0.50em + 1.1vmin);
+  }
 body {
 	background-color: #fff;
 	font-family: Raleway, sans-serif;
@@ -54,6 +54,7 @@ img {
 
 #botContent {
 	padding: 50px 0;
+	margin: 0 0 50px 0;
 }
 
 #rightContent {
@@ -117,10 +118,8 @@ header {
 .logo {}
 
 .logo #logo {
-	justify-content: space-around;
-    display: flex;
-    height: 50px;
-    margin: 15px 0 0 10px;
+	min-height: 70px;
+    max-height: 80px;
 }
 
 nav {
@@ -488,10 +487,14 @@ input[type=search] {
 	align-items: center;
 	flex-direction: row;
 	background-color: #f2f2f2;
-	margin: 50px 0 0 0;
+	padding: 0 0 0 50px;
 	height: 200px
 }
 
+#footerContent > div {
+	flex-grow: 1;
+    width: 33%;
+}
 #footerContent ul {
 	list-style-type: none;
 	text-align: left;
@@ -568,7 +571,7 @@ input[type=search] {
 body {
 		display: flex;
 		flex-direction: column;
-		flex-flow: row wrap
+		flex-flow: row;
 	}
 	.filterContainer>.filterTitle {
 		flex: 1 0 100%
@@ -581,7 +584,7 @@ body {
 	body {
 		display: flex;
 		flex-direction: column;
-		flex-flow: row wrap
+		flex-flow: row;
 	}
 	header {
 		display: flex;
@@ -590,11 +593,8 @@ body {
 		margin: 0;
 	}
 	.logo #logo {
-		justify-content: space-around;
-		display: flex;
-		height: 100px;
-		padding: 20px 0;
-		margin: 0 30px
+		min-height: 70px;
+		max-height: 80px;
 	}
 	nav {
 		width: 70%;
@@ -646,7 +646,7 @@ body {
 	body {
 		display: flex;
 		flex-direction: column;
-		flex-flow: row wrap
+		flex-flow: row;
 	}
 	header {
 		display: flex;
@@ -655,11 +655,8 @@ body {
 		margin: 0;
 	}
 	.logo #logo {
-		justify-content: space-around;
-		display: flex;
-		height: 100px;
-		padding: 20px 0;
-		margin: 0 30px
+		min-height: 70px;
+		max-height: 80px;
 	}
 	nav {
 		width: 70%;
