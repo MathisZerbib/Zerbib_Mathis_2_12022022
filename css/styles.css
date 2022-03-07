@@ -156,10 +156,10 @@ input[type=search]{
     cursor:pointer;
     padding:0 5%
 }
-.searchButton p{
+.searchButton span{
     margin:0
 }
-.searchButton:hover p{
+.searchButton:hover span{
     color:#0065fc
 }
 .searchButton:hover{
@@ -428,7 +428,7 @@ input[type=search]{
     .searchButton{
         border-radius:15px
     }
-    .searchButton p{
+    .searchButton span{
         display:none
     }
     .activeLink{
