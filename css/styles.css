@@ -1,22 +1,18 @@
-*,::after,::before{
-    box-sizing:inherit
-}
 html{
-    box-sizing:border-box;
     font-size:100%
 }
 body{
-    background-color:#fff;
     font-family:Raleway,sans-serif;
     margin:0
 }
 main{
-    display:flex;
-    flex-wrap:wrap;
     margin:0 20px
 }
 .flex{
     display:flex
+}
+.wrap {
+    flex-wrap: wrap;
 }
 .column{
     flex-direction:column
@@ -80,8 +76,8 @@ header{
     margin-left:50px
 }
 .logo #logo{
-    min-height:70px;
-    max-height:80px
+    height: 50px;
+    margin-top: 10px;
 }
 nav{
     width:25%;
@@ -582,10 +578,6 @@ input[type=search]{
     }
     .smallMiniature{
         height:200px
-    }
-    .miniature{
-        /* width:300px;
-        height:200px */
     }
     #footerContent{
         height:auto;
