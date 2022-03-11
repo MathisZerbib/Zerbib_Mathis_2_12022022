@@ -11,11 +11,12 @@
     <meta name="description" content="Booki est un système de réservation de vacances ! Vivez de nouvelles expériences et partez dans les plus beaux hotels de Paris, Chamonix, Marseile et bien d'autre encore!  ">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,18 +39,18 @@
             </div>
             <nav class="menu">
 
-                <div class="menuBox activeLink">
-                    <a class="border blue" href="#topContent">Hebergement</a>
-                </div>
+                <ul class="menuBox activeLink">
+                    <a  class="border noDecoration" href="#topContent"><li>Hebergement</li></a>
+                </ul>
 
-                <div class="menuBox inactiveLink">
-                    <a class="border blue" href='#botContent'>Activités</a>
-                </div>
+                <ul class="menuBox inactiveLink">
+                    <a href="#botContent" class="border black noDecoration"><li>Activités</li></a>
+                </ul>
 
             </nav>
         </header>
         <main class="wrap">
-            <div id="subHeader">
+            <section id="subHeader">
                 <div class="leftSubHeader">
                     <div id="searchTitle">
                         <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -57,7 +58,7 @@
                     </div>
                     <div class="searchFormContainer">
 
-                        <form class="searchForm" action="index.html">
+                        <form class="searchForm">
                             <div id="pinMap">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
@@ -106,8 +107,8 @@
                 </div>
                 <div class="rightSubHeader"></div>
 
-            </div>
-            <div id="mainContainer">
+            </section>
+            <aside id="mainContainer">
                 <div id="topContent">
                     <div class="hebergementsMarseille">
                         <h1 class="title">Hébergement à Marseille</h1>
@@ -262,15 +263,14 @@
                             </div>
                             </a>
                         </div>
-                        <p class="title bold small"> Afficher plus</p>
-
+                       <a href="#"><p class="title bold small"> Afficher plus</p></a>
                     </div>
                 </div>
 
 
 
                 <div id="rightContent">
-                    <h1 class="title mostfamousTitle">Les plus populaires<i class="fa-solid fa-chart-line"></i></h1>
+                    <h1 class="title mostfamousTitle">Les plus populaires <a href="#" class="black"><i class="fa-solid fa-chart-line"></i></a></h1>
 
                     <div class="hebergements">
                         <div class="mfCardContainer">
@@ -351,7 +351,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </aside>
 
 
             <div id="botContent">
@@ -474,24 +474,24 @@
                 <div class="footerColumn">
                     <h3 class="title">A propos</h3>
                     <ul>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales de vente</li>
-                        <li>Données et confidentialité</li>
+                        <a href="#" class="noDecoration black"><li>Fonctionnement du site</li></a>
+                        <a href="#" class="noDecoration black"><li>Conditions générales de vente</li></a>
+                        <a href="#" class="noDecoration black"><li>Données et confidentialité</li></a>
                     </ul>
                 </div>
                 <div class="footerColumn">
                     <h3 class="title">Nos hébergements</h3>
                     <ul>
-                        <li>Charte qualité</li>
-                        <li>Soumettre votre hôtel</li>
+                        <a href="#" class="noDecoration black"><li>Charte qualité</li></a>
+                        <a href="#" class="noDecoration black"><li>Soumettre votre hôtel</li></a>
                     </ul>
 
                 </div>
                 <div class="footerColumn">
                     <h3 class="title">Assistance</h3>
                     <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
+                        <a href="#" class="noDecoration black"><li>Centre d'aide</li></a>
+                        <a href="#" class="noDecoration black"><li>Nous contacter</li></a>
                     </ul>
                 </div>
             </div>
