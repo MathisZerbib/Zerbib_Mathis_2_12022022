@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    margin: 0 20px
+    padding: 0 20px
 }
 
 .flex {
@@ -703,23 +703,10 @@ input[type=search] {
 
 /* HTML
 
-
-
 ... Lundi soutenance blanche ...
 
-Hover image cards Effect
 Responsive  Card flex grow
 
-
-Diminuer le font size de rechercher optionnel
-
-
-
-
-Mettre balise aside composant Most famous 
-
-
-Balises section à la place de certaines div Html Section 
 
 
 
@@ -729,10 +716,5 @@ Balises section à la place de certaines div Html Section
 
 CSS 
 
-
-
  Mettre le logo d'applomb
-
-le body padding à la place de margin sur le main
-
-Enlever Images WebP  */
+ */
