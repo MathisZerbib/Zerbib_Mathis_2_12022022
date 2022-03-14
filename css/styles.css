@@ -135,11 +135,15 @@ nav a {
     margin: 0 4px
 }
 
-.menuBox:hover a {
+#container>header>nav>ul.menuBox.activeLink>a>li {
     color: #0065fc
 }
 
-.menuBox:visited a {
+.menuBox:hover a li {
+    color: #0065fc
+}
+
+.menuBox:visited a li {
     color: #0065fc;
 }
 
@@ -510,8 +514,8 @@ input[type=search] {
 
 @media screen and (min-width:992px) {
     .activeLink {
-        border-top: solid 2px #fff;
-        color: #0065fc
+        border-top: solid 2px #0065fc;
+        color: #0065fc;
     }
     .inactiveLink {
         border-top: solid 2px #fff;
@@ -536,7 +540,7 @@ input[type=search] {
         display: none
     }
     .activeLink {
-        border-bottom: solid 2px #fff;
+        border-bottom: solid 2px #0065fc;
         color: #0065fc
     }
     .inactiveLink {
@@ -613,6 +617,10 @@ input[type=search] {
     .footerColumn {
         margin-top: 20px;
         width: 200px
+    }
+    .activeLink {
+        border-bottom: solid 2px #0065fc;
+        color: #0065fc
     }
     .activeLink:hover {
         border-bottom: solid 2px #0065fc
@@ -706,11 +714,6 @@ input[type=search] {
 ... Lundi soutenance blanche ...
 
 Responsive  Card flex grow
-
-
-
-
-
 
 
 
