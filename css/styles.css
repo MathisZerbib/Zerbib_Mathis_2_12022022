@@ -117,33 +117,36 @@ nav {
     padding: 0 5px
 }
 
-.menu ul {
+nav a {
     margin: 5px;
     padding: 30px 0
 }
 
-nav a {
+nav li {
     list-style-type: none;
     cursor: pointer;
 }
 
+nav ul {
+    padding: 0;
+}
+
 .menuBox {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 50%;
-    margin: 0 4px
+    margin: 0;
+    padding-bottom: 0;
 }
 
-#container>header>nav>ul.menuBox.activeLink>a>li {
+.activeLink {
     color: #0065fc
 }
 
-.menuBox:hover a li {
-    color: #0065fc
+.inactiveLink {
+    color: #000
 }
 
-.menuBox:visited a li {
+.menuBox:hover li {
     color: #0065fc;
 }
 
@@ -308,7 +311,8 @@ input[type=search] {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column
+    flex-direction: column;
+    align-content: center;
 }
 
 .mfCardContainer .card {
@@ -332,6 +336,7 @@ input[type=search] {
     padding: 3px;
     margin: 15px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 6%), 0 6px 6px rgb(0 0 0 / 6%);
+    min-width: 350px;
 }
 
 .card,
@@ -514,8 +519,8 @@ input[type=search] {
 
 @media screen and (min-width:992px) {
     .activeLink {
-        border-top: solid 2px #0065fc;
-        color: #0065fc;
+        border-top: solid 2px #fff;
+        color: #0065fc
     }
     .inactiveLink {
         border-top: solid 2px #fff;
@@ -540,7 +545,7 @@ input[type=search] {
         display: none
     }
     .activeLink {
-        border-bottom: solid 2px #0065fc;
+        border-bottom: solid 2px #fff;
         color: #0065fc
     }
     .inactiveLink {
@@ -617,10 +622,6 @@ input[type=search] {
     .footerColumn {
         margin-top: 20px;
         width: 200px
-    }
-    .activeLink {
-        border-bottom: solid 2px #0065fc;
-        color: #0065fc
     }
     .activeLink:hover {
         border-bottom: solid 2px #0065fc
@@ -710,14 +711,27 @@ input[type=search] {
 
 
 /* HTML
+TODO
 
-... Lundi soutenance blanche ...
-
-Responsive  Card flex grow
-
+!!! Jeui soutenance !!!
 
 
-CSS 
 
- Mettre le logo d'applomb
- */
+Faire vivre le projet 
+Utiliser google slide 
+Mettre toutes les adresses dans le google slide 
+ORGANISER !!!! 
+
+Pas d'hésitation 
+Minimiser les kwaks
+La spécificité en CSS review
+
+Ne pas douter !! 
+
+
+BUG FIX 
+Boutton nous contacter Mailto
+
+
+
+*/
