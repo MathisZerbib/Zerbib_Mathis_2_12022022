@@ -1,337 +1,299 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=fr>
 
 <head>
     <title>Booki - Accueil</title>
-    <link rel="icon" href="./images/logo/Booki.png" sizes="16x16">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Booki est un système de réservation de vacances ! Vivez de nouvelles expériences et partez dans les plus beaux hotels de Paris, Chamonix, Marseile et bien d'autre encore!  ">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel=icon href=./images/logo/Booki.png sizes=16x16>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name=description content="Booki est un système de réservation de vacances ! Vivez de nouvelles expériences et partez dans les plus beaux hotels de Paris, Chamonix, Marseile et bien d'autre encore!  ">
+    <meta name=keywords content=HTML,CSS,XML,JavaScript>
+    <link rel=stylesheet href=./css/normalize.css>
+    <link rel=preconnect href=https://fonts.googleapis.com>
+    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel=stylesheet>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+    <link rel=stylesheet href=./css/styles.css>
 </head>
 
 <body>
-    <div id="container">
+    <div id=container>
         <header>
-            <div class="logo">
-                <picture>
-                    <a href="index.html">
-                        <img id="logo" sizes="(min-width: 992px) 50vw, 100vw" srcset="./images/logo/Booki.png 500w, ./images/logo/Booki@3x.png 1000w, ./images/logo/Booki@3x.png 1500w" src="./images/logo/Booki.png" alt="Booki Logo">
-                    </a>
-                </picture>
+            <div class=logo>
+
+                <a href=index.html>
+                    <img id=logo sizes="(min-width: 992px) 50vw, 100vw" srcset="./images/logo/Booki.png 500w, ./images/logo/Booki@3x.png 1000w, ./images/logo/Booki@3x.png 1500w" src=./images/logo/Booki.png alt="Booki Logo">
+                </a>
+
             </div>
             <nav>
-                <a class="border noDecoration activeLink flex column menuBox" href="#topContent">
+                <a class="border noDecoration activeLink flex column menuBox" href=#topContent>
                     <ul>
                         <li>
                             Hebergement
                         </li>
                     </ul>
                 </a>
-                <a href="#botContent" class="border black noDecoration inactiveLink flex column menuBox">
-
+                <a href=#botContent class="border black noDecoration inactiveLink flex column menuBox">
                     <ul>
                         <li>Activités</li>
                     </ul>
                 </a>
-
             </nav>
         </header>
-        <main class="wrap">
-            <section id="subHeader">
-                <div class="leftSubHeader">
-                    <div id="searchTitle">
-                        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <main class=wrap>
+            <section id=subHeader>
+                <div class=leftSubHeader>
+                    <div id=searchTitle>
+                        <h2 class=title>Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
-                    <div class="searchFormContainer">
-
-                        <form class="searchForm">
-                            <div id="pinMap">
+                    <div class=searchFormContainer>
+                        <form class=searchForm>
+                            <div id=pinMap>
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
-                            <input class="inputSearchBox" type="search" list="mylist">
-                            <datalist id="mylist">
-                                <option value="Marseille, France"></option>
-                                <option value="Paris, France"></option>
-                                <option value="Chamonix, France"></option>
-                            </datalist>
-                            <button class="searchButton" type="submit"><span>Rechercher</span>
-                                <i class="fas fa-search"></i>
-                            </button>
-
+                            <input class=inputSearchBox type=search list=mylist>
+                            <datalist id=mylist>
+<option value="Marseille, France"></option>
+<option value="Paris, France"></option>
+<option value="Chamonix, France"></option>
+</datalist>
+                            <button class=searchButton type=submit><span>Rechercher</span>
+<i class="fas fa-search"></i>
+</button>
                         </form>
                     </div>
-
-
-                    <div class="filterContainer">
-                        <h3 class="filterTitle">Filtres</h3>
-                        <div class="chip">
+                    <div class=filterContainer>
+                        <h3 class=filterTitle>Filtres</h3>
+                        <div class=chip>
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <p>Economique</p>
                         </div>
-
-                        <div class="chip">
+                        <div class=chip>
                             <i class="fa-solid fa-person"></i>
                             <p>Familial</p>
                         </div>
-
-
-                        <div class="chip">
+                        <div class=chip>
                             <i class="fa-solid fa-heart"></i>
                             <p>Romantique</p>
                         </div>
-
-                        <div class="chip">
+                        <div class=chip>
                             <i class="fa-solid fa-dog"></i>
                             <p>Animaux autorisés</p>
                         </div>
                     </div>
-                    <div id="spanInfo">
+                    <div id=spanInfo>
                         <i class="fa-solid fa-info iconInfo"></i>
-                        <p class="info "> Plus de 500 Logements sont disponibles dans cette ville</p>
+                        <p class=info> Plus de 500 Logements sont disponibles dans cette ville</p>
                     </div>
-
                 </div>
-                <div class="rightSubHeader"></div>
-
+                <div class=rightSubHeader></div>
             </section>
-            <section id="mainContainer">
-                <div id="topContent">
-                    <div class="hebergementsMarseille">
-                        <h1 class="title">Hébergement à Marseille</h1>
-                        <div class="cardContainer">
-
-                            <a href="#">
-                                <div class="card">
-                                    <div class="cardHeader">
-
+            <section id=mainContainer>
+                <div id=topContent>
+                    <div class=hebergementsMarseille>
+                        <h2 class=title>Hébergement à Marseille</h2>
+                        <div class=cardContainer>
+                            <a href=#>
+                                <div class=card>
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="miniature" src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière Miniature Image">
+                                            <img class=miniature src=./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg alt="Auberge La Canebière Miniature Image">
                                         </picture>
-
                                     </div>
-                                    <div class="cardBody">
+                                    <div class=cardBody>
                                         <p class="bold titleHouse">Auberge La Canebière</p>
-                                        <p class=" info price">Nuit à partir de <span class="bold">25€</span></p>
+                                        <p class="info price">Nuit à partir de <span class=bold>25€</span></p>
                                     </div>
-                                    <div class="cardFooter">
+                                    <div class=cardFooter>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs unstar"></i>
-
                                     </div>
                                 </div>
                             </a>
-
-                            <a href="#">
-                                <div class="card">
-                                    <div class="cardHeader">
+                            <a href=#>
+                                <div class=card>
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="miniature" src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port Miniature Image">
+                                            <img class=miniature src=./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg alt="Hôtel du port Miniature Image">
                                         </picture>
                                     </div>
-                                    <div class="cardBody">
+                                    <div class=cardBody>
                                         <p class="bold titleHouse">Hôtel du port</p>
-                                        <p class=" info price">Nuit à partir de <span>52<span class="bold">€</span></span>
+                                        <p class="info price">Nuit à partir de <span>52<span class=bold>€</span></span>
                                         </p>
                                     </div>
-                                    <div class="cardFooter">
+                                    <div class=cardFooter>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
-
                                     </div>
                                 </div>
                             </a>
-
-
-
-                            <a href="#">
-                                <div class="card">
-                                    <div class="cardHeader">
+                            <a href=#>
+                                <div class=card>
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="miniature" src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes Miniature Image">
+                                            <img class=miniature src=./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg alt="Hôtel Les mouettes Miniature Image">
                                         </picture>
                                     </div>
-                                    <div class="cardBody">
+                                    <div class=cardBody>
                                         <p class="bold titleHouse">Hôtel Les mouettes</p>
-                                        <p class=" info price">Nuit à partir de <span>76<span class="bold">€</span></span>
+                                        <p class="info price">Nuit à partir de <span>76<span class=bold>€</span></span>
                                         </p>
                                     </div>
-                                    <div class="cardFooter">
+                                    <div class=cardFooter>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs unstar"></i>
-
                                     </div>
                                 </div>
                             </a>
-
-                            <a href="#">
-                                <div class="card">
-                                    <div class="cardHeader">
+                            <a href=#>
+                                <div class=card>
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="miniature" src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer Miniature Image" loading="lazy">
+                                            <img class=miniature src=./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg alt="Hôtel de la mer Miniature Image" loading=lazy>
                                         </picture>
                                     </div>
-                                    <div class="cardBody">
+                                    <div class=cardBody>
                                         <p class="bold titleHouse">Hôtel de la mer</p>
-                                        <p class=" info price">Nuit à partir de <span>46<span class="bold">€</span></span>
+                                        <p class="info price">Nuit à partir de <span>46<span class=bold>€</span></span>
                                         </p>
                                     </div>
-                                    <div class="cardFooter">
+                                    <div class=cardFooter>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs unstar"></i>
                                         <i class="fa-solid fa-star fa-xs unstar"></i>
-
                                     </div>
                                 </div>
                             </a>
-
-
-                            <a href="#">
-                                <div class="card">
-                                    <div class="cardHeader">
+                            <a href=#>
+                                <div class=card>
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="miniature" src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier Miniature Image" loading="lazy">
+                                            <img class=miniature src=./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg alt="Auberge Le Panier Miniature Image" loading=lazy>
                                         </picture>
                                     </div>
-                                    <div class="cardBody">
+                                    <div class=cardBody>
                                         <p class="bold titleHouse">Auberge Le Panier</p>
-                                        <p class=" info price">Nuit à partir de <span class="bold">23€</span></p>
+                                        <p class="info price">Nuit à partir de <span class=bold>23€</span></p>
                                     </div>
-                                    <div class="cardFooter">
+                                    <div class=cardFooter>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs unstar"></i>
-
                                     </div>
                                 </div>
                             </a>
-
-                            <a href="#">
-                                <div class="card">
-                                    <div class="cardHeader">
+                            <a href=#>
+                                <div class=card>
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="miniature" src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina Miniature Image" loading="lazy">
+                                            <img class=miniature src=./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg alt="Hôtel chez Amina Miniature Image" loading=lazy>
                                         </picture>
                                     </div>
-                                    <div class="cardBody">
+                                    <div class=cardBody>
                                         <p class="bold titleHouse">Hôtel chez Amina</p>
-                                        <p class=" info price">Nuit à partir de <span>96<span class="bold">€</span></span>
+                                        <p class="info price">Nuit à partir de <span>96<span class=bold>€</span></span>
                                         </p>
                                     </div>
-                                    <div class="cardFooter">
+                                    <div class=cardFooter>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
                                         <i class="fa-solid fa-star fa-xs"></i>
-
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <a href="#">
+                        <a href=#>
                             <p class="title bold small"> Afficher plus</p>
                         </a>
                     </div>
                 </div>
-
-
-
-                <aside id="rightContent">
-                    <h1 class="title mostfamousTitle">Les plus populaires <a href="#" class="black"><i class="fa-solid fa-chart-line"></i></a></h1>
-
-                    <div class="hebergements">
-                        <div class="mfCardContainer">
-                            <a href="#">
+                <aside id=rightContent>
+                    <h2 class="title mostfamousTitle">Les plus populaires <a href=# class=black><i class="fa-solid fa-chart-line"></i></a></h2>
+                    <div class=hebergements>
+                        <div class=mfCardContainer>
+                            <a href=#>
                                 <div class="card flex">
-                                    <div class="cardHeader">
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="mostFamousPictures" src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin Miniature Image" loading="lazy">
+                                            <img class=mostFamousPictures src=./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg alt="Hôtel Le soleil du matin Miniature Image" loading=lazy>
                                         </picture>
                                     </div>
                                     <div class="flex column mostFamousText">
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold titleHouse noMargin">Hôtel Le soleil du matin</p>
-                                            <p class=" info price">Nuit à partir de <span>128<span class="bold">€</span></span>
+                                            <p class="info price">Nuit à partir de <span>128<span class=bold>€</span></span>
                                             </p>
                                         </div>
-                                        <div class="cardFooter">
+                                        <div class=cardFooter>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
-
                                         </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a href=#>
                                 <div class="card flex">
-                                    <div class="cardHeader">
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="mostFamousPictures" src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes Miniature Image" loading="lazy">
+                                            <img class=mostFamousPictures src=./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg alt="Au coeur de l'eau Chambres d'hôtes Miniature Image" loading=lazy>
                                         </picture>
                                     </div>
                                     <div class="flex column mostFamousText">
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold titleHouse noMargin">Au coeur de l'eau<br /> Chambres d'hôtes</p>
-                                            <p class=" info price">Nuit à partir de <span>71<span class="bold">€</span></span>
+                                            <p class="info price">Nuit à partir de <span>71<span class=bold>€</span></span>
                                             </p>
                                         </div>
-                                        <div class="cardFooter">
+                                        <div class=cardFooter>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs unstar"></i>
-
                                         </div>
                                     </div>
                                 </div>
                             </a>
-
-                            <a href="#">
+                            <a href=#>
                                 <div class="card flex">
-                                    <div class="cardHeader">
+                                    <div class=cardHeader>
                                         <picture>
-                                            <img class="mostFamousPictures" src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Tout bleu et Blanc Miniature Image" loading="lazy">
+                                            <img class=mostFamousPictures src=./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg alt="Hôtel Tout bleu et Blanc Miniature Image" loading=lazy>
                                         </picture>
                                     </div>
                                     <div class="flex column mostFamousText">
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold titleHouse noMargin">Hôtel Tout bleu et Blanc</p>
-                                            <p class=" info price">Nuit à partir de <span>68<span class="bold">€</span></span>
+                                            <p class="info price">Nuit à partir de <span>68<span class=bold>€</span></span>
                                             </p>
                                         </div>
-                                        <div class="cardFooter">
+                                        <div class=cardFooter>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs"></i>
                                             <i class="fa-solid fa-star fa-xs unstar"></i>
-
                                         </div>
                                     </div>
                                 </div>
@@ -340,100 +302,89 @@
                     </div>
                 </aside>
             </section>
-
-
-            <div id="botContent">
-                <h1 class="title">Activités à Marseille</h1>
-                <div class="hebergements">
-                    <div class="cardContainer">
-                        <div class="cardLeft">
-                            <div class="innerCardLeft">
-                                <a href="#">
-                                    <div class="cardBorderless">
-                                        <div class="cardHeader">
+            <div id=botContent>
+                <h1 class=title>Activités à Marseille</h1>
+                <div class=hebergements>
+                    <div class=cardContainer>
+                        <div class=cardLeft>
+                            <div class=innerCardLeft>
+                                <a href=#>
+                                    <div class=cardBorderless>
+                                        <div class=cardHeader>
                                             <picture>
-                                                <img class="bigMiniature" src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port Miniature Image" loading="lazy">
+                                                <img class=bigMiniature src=./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg alt="Vieux Port Miniature Image" loading=lazy>
                                             </picture>
                                         </div>
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold cardTitleFooter">Vieux Port</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-
-
-                            <div class="innerCardRight">
-
-                                <a href="#">
-                                    <div class="cardBorderless">
-                                        <div class="cardHeader">
+                            <div class=innerCardRight>
+                                <a href=#>
+                                    <div class=cardBorderless>
+                                        <div class=cardHeader>
                                             <picture>
-                                                <img class="mediumMiniature" src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de pomègues Miniature Image" loading="lazy">
+                                                <img class=mediumMiniature src=./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg alt="Fort de pomègues Miniature Image" loading=lazy>
                                             </picture>
                                         </div>
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold cardTitleFooter">Fort de pomègues</p>
                                         </div>
                                     </div>
                                 </a>
-
-                                <a href="#">
-                                    <div class="cardBorderless">
-                                        <div class="cardHeader">
+                                <a href=#>
+                                    <div class=cardBorderless>
+                                        <div class=cardHeader>
                                             <picture>
-                                                <img class="smallMiniature" src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du frioul Miniature Image" loading="lazy">
+                                                <img class=smallMiniature src=./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg alt="Iles du frioul Miniature Image" loading=lazy>
                                             </picture>
                                         </div>
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold cardTitleFooter">Iles du frioul</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
-
-                        <div class="cardRight">
-                            <div class="innerCardLeft">
-                                <a href="#">
-                                    <div class="cardBorderless">
-                                        <div class="cardHeader">
+                        <div class=cardRight>
+                            <div class=innerCardLeft>
+                                <a href=#>
+                                    <div class=cardBorderless>
+                                        <div class=cardHeader>
                                             <picture>
-                                                <source type="image/png" srcset="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1x, ./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x">
-                                                <img class="bigMiniature" src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des calanques Miniature Image" loading="lazy">
+                                                <source type=image/png srcset="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1x, ./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x">
+                                                <img class=bigMiniature src=./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg alt="Parc National des calanques Miniature Image" loading=lazy>
                                             </picture>
                                         </div>
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold cardTitleFooter">Parc National des calanques</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-
-
-                            <div class="innerCardRight">
-
-                                <a href="#">
-                                    <div class="cardBorderless">
-                                        <div class="cardHeader">
+                            <div class=innerCardRight>
+                                <a href=#>
+                                    <div class=cardBorderless>
+                                        <div class=cardHeader>
                                             <picture>
-                                                <img class="smallMiniature" src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde Miniature Image" loading="lazy">
+                                                <img class=smallMiniature src=./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg alt="Notre-Dame-de-la-Garde Miniature Image" loading=lazy>
                                             </picture>
                                         </div>
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold cardTitleFooter">Notre-Dame-de-la-Garde</p>
                                         </div>
                                     </div>
                                 </a>
-
-                                <a href="#">
-                                    <div class="cardBorderless">
-                                        <div class="cardHeader">
+                                <a href=#>
+                                    <div class=cardBorderless>
+                                        <div class=cardHeader>
                                             <picture>
-                                                <img class="mediumMiniature" src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp Miniature Image" loading="lazy">
+                                                <img class=mediumMiniature src=./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg alt="Parc Longchamp Miniature Image" loading=lazy>
                                             </picture>
                                         </div>
-                                        <div class="cardBody">
+                                        <div class=cardBody>
                                             <p class="bold cardTitleFooter">Parc Longchamp</p>
                                         </div>
                                     </div>
@@ -445,48 +396,39 @@
             </div>
         </main>
         <footer>
-            <div id="footerContent">
-                <div class="footerColumn">
-                    <h3 class="title">A propos</h3>
+            <div id=footerContent>
+                <div class=footerColumn>
+                    <h3 class=title>A propos</h3>
                     <ul>
-                        <a href="#" class="noDecoration black">
-                            <li>Fonctionnement du site</li>
-                        </a>
-                        <a href="#" class="noDecoration black">
-                            <li>Conditions générales de vente</li>
-                        </a>
-                        <a href="#" class="noDecoration black">
-                            <li>Données et confidentialité</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="footerColumn">
-                    <h3 class="title">Nos hébergements</h3>
-                    <ul>
-                        <a href="#" class="noDecoration black">
-                            <li>Charte qualité</li>
-                        </a>
-                        <a href="#" class="noDecoration black">
-                            <li>Soumettre votre hôtel</li>
-                        </a>
-                    </ul>
 
+                        <li><a href=# class="noDecoration black">Fonctionnement du site</a></li>
+
+                        <li><a href=# class="noDecoration black">Conditions générales de vente</a></li>
+
+                        <li><a href=# class="noDecoration black">Données et confidentialité</a></li>
+                    </ul>
                 </div>
-                <div class="footerColumn">
-                    <h3 class="title">Assistance</h3>
+                <div class=footerColumn>
+                    <h3 class=title>Nos hébergements</h3>
                     <ul>
-                        <a href="#" class="noDecoration black">
-                            <li>Centre d'aide</li>
-                        </a>
-                        <a href="mailto:supportBooki" class="noDecoration black">
-                            <li>Nous contacter</li>
-                        </a>
+
+                        <li><a href=# class="noDecoration black">Charte qualité</a></li>
+
+                        <li><a href=# class="noDecoration black">Soumettre votre hôtel</a></li>
+                    </ul>
+                </div>
+                <div class=footerColumn>
+                    <h3 class=title>Assistance</h3>
+                    <ul>
+
+                        <li><a href=# class="noDecoration black">Centre d'aide</a></li>
+
+                        <li> <a href=mailto:supportBooki class="noDecoration black">Nous contacter</a></li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>
