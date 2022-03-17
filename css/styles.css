@@ -486,15 +486,6 @@ input[type=search] {
     line-height: 20px
 }
 
-
-/* #footerContent a:hover {
-    color: #0065fc;
-}
-
-#footerContent a:active {
-    color: #0065fc;
-} */
-
 #footerContent>div>ul>li>a:hover {
     color: #0065fc;
 }
