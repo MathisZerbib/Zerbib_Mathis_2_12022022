@@ -483,12 +483,15 @@ input[type=search] {
 }
 
 #footerContent a {
-    cursor: pointer;
     line-height: 20px
 }
 
 #footerContent a:hover {
-    color: #0065fc
+    color: #0065fc;
+}
+
+#footerContent a:active {
+    color: #0065fc;
 }
 
 @media screen and (min-width:992px) {
