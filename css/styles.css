@@ -72,10 +72,6 @@ button {
     cursor: pointer
 }
 
-#footerContent a:hover {
-    color: #0065fc;
-}
-
 .hebergementsMarseille a {
     flex: 0 0 33.33333%;
 }
@@ -486,12 +482,12 @@ input[type=search] {
     padding-inline-start: 0
 }
 
-#footerContent li {
+#footerContent a {
     cursor: pointer;
     line-height: 20px
 }
 
-#footerContent li:hover {
+#footerContent a:hover {
     color: #0065fc
 }
 
