@@ -21,6 +21,10 @@ body {
     flex-direction: column
 }
 
+.row {
+    flex-direction: row;
+}
+
 img {
     width: 100%;
     height: auto
@@ -32,12 +36,11 @@ img {
 
 #mainContainer {
     margin: 30px 0;
-    display: flex;
     justify-content: center
 }
 
 #botContent {
-    padding: 50px 0;
+    padding: 50px 20px;
     margin: 0 0 50px 0
 }
 
@@ -54,7 +57,6 @@ button {
 }
 
 .title {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: auto;
@@ -98,7 +100,6 @@ button {
 }
 
 header {
-    display: flex;
     justify-content: space-between;
     padding-left: 2.5vw
 }
@@ -110,7 +111,6 @@ header {
 
 nav {
     width: 25%;
-    display: flex;
     padding: 0 5px
 }
 
@@ -156,7 +156,6 @@ nav ul {
     min-width: 280px;
     border: solid 1px #f2f2f2;
     border-radius: 15px;
-    display: flex;
     height: 45px;
     align-items: center;
     justify-content: space-between
@@ -170,7 +169,6 @@ nav ul {
     background-color: #f2f2f2;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: inherit;
@@ -232,12 +230,10 @@ input[type=search] {
 }
 
 #subHeader {
-    display: flex;
     margin: 30px
 }
 
 .filterContainer {
-    display: flex;
     justify-content: start;
     align-items: center;
     margin: 5px 0
@@ -248,7 +244,6 @@ input[type=search] {
 }
 
 .chip {
-    display: flex;
     align-items: center;
     flex-grow: 0;
     height: 45px;
@@ -273,7 +268,6 @@ input[type=search] {
 
 .chip i {
     background-color: #deebff;
-    display: flex;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -293,7 +287,6 @@ input[type=search] {
 .iconInfo {
     height: 25px;
     width: 25px;
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -305,10 +298,7 @@ input[type=search] {
 }
 
 .mfCardContainer {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
     align-content: center;
 }
 
@@ -319,11 +309,8 @@ input[type=search] {
 }
 
 .cardContainer {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    flex-direction: row
 }
 
 .card {
@@ -401,10 +388,8 @@ input[type=search] {
 }
 
 #spanInfo {
-    display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-direction: row
 }
 
 .info {
@@ -412,29 +397,23 @@ input[type=search] {
 }
 
 .cardLeft {
-    display: flex;
     flex: 0 0 50%;
     justify-content: space-evenly;
     height: 400px
 }
 
 .innerCardLeft {
-    display: flex;
-    flex-direction: column;
     width: 50%;
     height: auto
 }
 
 .cardRight {
-    display: flex;
     flex: 0 0 50%;
     justify-content: space-evenly;
     height: 400px
 }
 
 .innerCardRight {
-    display: flex;
-    flex-direction: column;
     width: 50%;
     height: auto
 }
@@ -484,11 +463,8 @@ input[type=search] {
 
 #footerContent {
     font-size: small;
-    display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
-    flex-direction: row;
     background-color: #f2f2f2;
     padding: 0 0 0 50px;
     height: 180px
@@ -558,6 +534,9 @@ input[type=search] {
     #rightContent {
         padding: 10px 10px;
         margin: 5px 25px;
+    }
+    .cardBorderless {
+        width: 250px;
     }
 }
 

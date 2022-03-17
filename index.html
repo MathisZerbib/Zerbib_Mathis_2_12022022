@@ -18,7 +18,7 @@
 
 <body>
     <div id=container>
-        <header>
+        <header class="flex">
             <div class=logo>
 
                 <a href=index.html>
@@ -26,7 +26,7 @@
                 </a>
 
             </div>
-            <nav>
+            <nav class="flex">
                 <a class="border noDecoration activeLink flex column menuBox" href=#topContent>
                     <ul>
                         <li>
@@ -42,15 +42,15 @@
             </nav>
         </header>
         <main class=wrap>
-            <section id=subHeader>
+            <section id="subHeader" class="flex">
                 <div class=leftSubHeader>
                     <div id=searchTitle>
-                        <h2 class=title>Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <h2 class="title flex">Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <div class=searchFormContainer>
-                        <form class=searchForm>
-                            <div id=pinMap>
+                        <form class="searchForm flex">
+                            <div id="pinMap" class="flex">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <input class=inputSearchBox type=search list=mylist>
@@ -64,37 +64,37 @@
 </button>
                         </form>
                     </div>
-                    <div class=filterContainer>
+                    <div class="filterContainer flex">
                         <h3 class=filterTitle>Filtres</h3>
-                        <div class=chip>
-                            <i class="fa-solid fa-money-bill-wave"></i>
+                        <div class="chip flex">
+                            <i class="fa-solid flex fa-money-bill-wave"></i>
                             <p>Economique</p>
                         </div>
-                        <div class=chip>
-                            <i class="fa-solid fa-person"></i>
+                        <div class="chip flex">
+                            <i class="fa-solid flex fa-person"></i>
                             <p>Familial</p>
                         </div>
-                        <div class=chip>
-                            <i class="fa-solid fa-heart"></i>
+                        <div class="chip flex">
+                            <i class="fa-solid flex fa-heart"></i>
                             <p>Romantique</p>
                         </div>
-                        <div class=chip>
-                            <i class="fa-solid fa-dog"></i>
+                        <div class="chip flex">
+                            <i class="fa-solid flex fa-dog"></i>
                             <p>Animaux autorisés</p>
                         </div>
                     </div>
-                    <div id=spanInfo>
-                        <i class="fa-solid fa-info iconInfo"></i>
+                    <div id="spanInfo" class="flex row">
+                        <i class="fa-solid fa-info iconInfo flex"></i>
                         <p class=info> Plus de 500 Logements sont disponibles dans cette ville</p>
                     </div>
                 </div>
                 <div class=rightSubHeader></div>
             </section>
-            <section id=mainContainer>
+            <section id="mainContainer" class="flex">
                 <div id=topContent>
                     <div class=hebergementsMarseille>
-                        <h2 class=title>Hébergement à Marseille</h2>
-                        <div class=cardContainer>
+                        <h2 class="title flex">Hébergement à Marseille</h2>
+                        <div class="cardContainer row flex wrap">
                             <a href=#>
                                 <div class=card>
                                     <div class=cardHeader>
@@ -221,14 +221,14 @@
                             </a>
                         </div>
                         <a href=#>
-                            <p class="title bold small"> Afficher plus</p>
+                            <p class="title flex bold small"> Afficher plus</p>
                         </a>
                     </div>
                 </div>
                 <aside id=rightContent>
-                    <h2 class="title mostfamousTitle">Les plus populaires <a href=# class=black><i class="fa-solid fa-chart-line"></i></a></h2>
+                    <h2 class="title flex mostfamousTitle">Les plus populaires <a href=# class=black><i class="fa-solid fa-chart-line"></i></a></h2>
                     <div class=hebergements>
-                        <div class=mfCardContainer>
+                        <div class="mfCardContainer column flex wrap">
                             <a href=#>
                                 <div class="card flex">
                                     <div class=cardHeader>
@@ -303,11 +303,11 @@
                 </aside>
             </section>
             <div id=botContent>
-                <h1 class=title>Activités à Marseille</h1>
+                <h1 class="title flex">Activités à Marseille</h1>
                 <div class=hebergements>
-                    <div class=cardContainer>
-                        <div class=cardLeft>
-                            <div class=innerCardLeft>
+                    <div class="cardContainer row flex wrap">
+                        <div class="cardLeft flex">
+                            <div class="innerCardLeft flex column">
                                 <a href=#>
                                     <div class=cardBorderless>
                                         <div class=cardHeader>
@@ -321,7 +321,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class=innerCardRight>
+                            <div class="innerCardRight flex column">
                                 <a href=#>
                                     <div class=cardBorderless>
                                         <div class=cardHeader>
@@ -348,8 +348,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class=cardRight>
-                            <div class=innerCardLeft>
+                        <div class="cardRight flex">
+                            <div class="innerCardLeft flex column">
                                 <a href=#>
                                     <div class=cardBorderless>
                                         <div class=cardHeader>
@@ -364,7 +364,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class=innerCardRight>
+                            <div class="innerCardRight flex column">
                                 <a href=#>
                                     <div class=cardBorderless>
                                         <div class=cardHeader>
@@ -396,9 +396,9 @@
             </div>
         </main>
         <footer>
-            <div id=footerContent>
+            <div id="footerContent" class="flex wrap row">
                 <div class=footerColumn>
-                    <h3 class=title>A propos</h3>
+                    <h3 class="title flex">A propos</h3>
                     <ul>
 
                         <li><a href=# class="noDecoration black">Fonctionnement du site</a></li>
@@ -409,7 +409,7 @@
                     </ul>
                 </div>
                 <div class=footerColumn>
-                    <h3 class=title>Nos hébergements</h3>
+                    <h3 class="title flex">Nos hébergements</h3>
                     <ul>
 
                         <li><a href=# class="noDecoration black">Charte qualité</a></li>
@@ -418,7 +418,7 @@
                     </ul>
                 </div>
                 <div class=footerColumn>
-                    <h3 class=title>Assistance</h3>
+                    <h3 class="title flex">Assistance</h3>
                     <ul>
 
                         <li><a href=# class="noDecoration black">Centre d'aide</a></li>
