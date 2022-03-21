@@ -134,10 +134,11 @@ nav ul {
     width: 50%;
     margin: 0;
     padding-bottom: 0;
+    font-weight: 600;
 }
 
 .activeLink {
-    color: #0065fc
+    color: #0065fc;
 }
 
 .inactiveLink {
@@ -492,7 +493,7 @@ input[type=search] {
 
 @media screen and (min-width:992px) {
     .activeLink {
-        border-top: solid 2px #fff;
+        border-top: solid 2px #0065fc;
         color: #0065fc
     }
     .inactiveLink {
